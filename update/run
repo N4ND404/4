@@ -1,10 +1,10 @@
 #!/bin/bash
 # //====================================================
 # //	System Request:Debian 9+/Ubuntu 18.04+/20+
-# //	Author:	
+# //	Mod:	Mod By N4
 # //	Dscription: Xray Menu Management
-# //	email: 
-# //  telegram: https://t.me/
+# //	email: n4nd4x8@gmail.com
+# //  telegram: https://t.me/n4nd404
 # //====================================================
 # // font color configuration | AUTOSCRIPT BY N4
 # COLOR VALIDATION
@@ -27,7 +27,7 @@ freq=$(awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo)
 cores=$(awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo)
 cname=$(awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo)
 Exp="Never Expired"
-Name="N4 SSH Tunnel"
+Name="N4 AUTO SCRIPT"
 Open_SSH=$(systemctl status ssh | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
 Dropbear=$(systemctl status dropbear | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
 Dropbear_Websocket=$(systemctl status dropbear | grep active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g')
