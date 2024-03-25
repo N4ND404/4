@@ -71,7 +71,7 @@ function is_root() {
 
 ### Change Environment System
 function first_setup(){
-    timedatectl set-timezone Asia/Kuala_Lumpur
+    timedatectl set-timezone Asia/Yangon
     wget -O /etc/banner ${REPO}config/banner >/dev/null 2>&1
     chmod +x /etc/banner
     wget -O /etc/ssh/sshd_config ${REPO}config/sshd_config >/dev/null 2>&1
@@ -110,7 +110,7 @@ function dir_xray() {
     # mkdir -p /usr/sbin/xray/
     mkdir -p /var/log/xray/
     mkdir -p /var/www/html/
-    mkdir -p /etc/nevermoressh/
+    mkdir -p /etc/n4/
 #    chmod +x /var/log/xray
     touch /var/log/xray/{access.log,error.log}
     chmod 777 /var/log/xray/*.log
@@ -140,7 +140,7 @@ function pasang_ssl() {
     mkdir /root/.acme.sh
     systemctl stop $STOPWEBSERVER
     systemctl stop nginx
-    curl https://raw.githubusercontent.com/NevermoreSSH/VVV/main/acme.sh -o /root/.acme.sh/acme.sh
+    curl https://raw.githubusercontent.com/N4ND404/4/main/acme.sh -o /root/.acme.sh/acme.sh
     chmod +x /root/.acme.sh/acme.sh
     /root/.acme.sh/acme.sh --upgrade --auto-upgrade
     /root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
@@ -356,9 +356,9 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user taibabihutan17@gmail.com
-from taibabihutan17@gmail.com
-password romanisti
+user n4nd4x8@gmail.com
+from n4nd4x8@gmail.com
+password n4vpn
 logfile ~/.msmtp.log
 EOF
 
@@ -375,7 +375,7 @@ print_ok "Complete installation of additional modules"
 
 
 ########## SETUP FROM HERE ##########
-# ORIGINAL SCRIPT BY NE4   #
+# Modify Script BY N4 #
 #####################################
 echo "INSTALLING SCRIPT..."
 
@@ -386,7 +386,7 @@ cat >/root/tmp <<-END
 ### N4 $TANGGAL $MYIP
 END
 ####
-NEVERMORESSH() {
+N4() {
     data=($(cat /root/tmp | grep -E "^### " | awk '{print $2}'))
     for user in "${data[@]}"; do
         exp=($(grep -E "^### $user" "/root/tmp" | awk '{print $3}'))
