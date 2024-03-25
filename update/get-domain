@@ -1,13 +1,13 @@
 #!/bin/bash
 # //====================================================
 # //	System Request:Debian 9+/Ubuntu 18.04+/20+
-# //	Author:	elliez667
+# //	Mod:	Mod By N4
 # //	Dscription: Xray Menu Management
-# //	email: elliez667@gmail.com
-# //  telegram: https://t.me/
+# //	email: n4nd4x8@gmail.com
+# //  telegram: https://t.me/n4nd404
 # //====================================================
 # // font color configuration | AUTOSCRIPT BY N4
-#nuryahyamuhaimin@gmail.com
+#n4nd4x8@gmail.com
 RED='\033[0;31m'
 NC='\033[0m'
 GREEN='\033[0;32m'
@@ -63,7 +63,7 @@ function ns_domain_cloudflare() {
     SUB=$(tr </dev/urandom -dc a-z0-9 | head -c6)
     SUB_DOMAIN=${SUB}."slowdns.app"
     NS_DOMAIN=ns-${DAOMIN}
-    CF_ID=elliez667@gmail.com
+    CF_ID=n4nd4x8@gmail.com
     CF_KEY=9dd2f30c099dbcf541cbd5c188d61ce060cf7
     set -euo pipefail
     IP=$(wget -qO- ipinfo.io/ip)
@@ -108,7 +108,7 @@ clear
 echo -e "\033[0;33m   ┌──────────────────────────────────────────┐\033[0m"
 echo -e "\033[0;33m   │\033[0m            \033[0;32mCHANGE DOMAIN VPS\033[0m             \033[0;33m|\033[0m"
 echo -e "\033[0;33m   └──────────────────────────────────────────┘\033[0m"
-echo -e "     ${RED}Autoscript xray vpn lite (multi port)${NC}"
+echo -e "     ${RED}Autoscript xray (multi port)${NC}"
 echo -e "${RED}Make sure the internet is smooth when installing the script${NC}"
 echo -e "───────────────────────────────────────────────────────"
 echo -e ""
@@ -118,10 +118,10 @@ echo -e "       ${GREEN}Total RAM${NC}   :  $totalram MB"
 echo -e ""
 echo -e "───────────────────────────────────────────────────────"
 read -rp "Input ur Domain/Host : " -e domain
-#read -rp "Input ur NS-Domain   : " -e NS_DOMAIN
+read -rp "Input ur NS-Domain   : " -e NS_DOMAIN
 rm -rf /etc/xray/domain
 echo $domain >/etc/xray/domain
-#echo $NS_DOMAIN >/etc/xray/dns
+echo $NS_DOMAIN >/etc/xray/dns
 get_acme_domain
 ns_domain_cloudflare
 read -n 1 -s -r -p "Press any key to back on menu"
