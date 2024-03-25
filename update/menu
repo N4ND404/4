@@ -1,10 +1,10 @@
 #!/bin/bash
 # //====================================================
 # //	System Request:Debian 9+/Ubuntu 18.04+/20+
-# //	Author:	N4
+# //	Mod:	Mod By N4
 # //	Dscription: Xray Menu Management
-# //	email: 
-# //  telegram: https://t.me/
+# //	email: n4nd4x8@gmail.com
+# //  telegram: https://t.me/n4nd404
 # //====================================================
 # // font color configuration | AUTOSCRIPT BY N4
 # COLOR VALIDATION
@@ -31,7 +31,7 @@ LOADCPU=$(printf '%-0.00001s' "$(top -bn1 | awk '/Cpu/ { cpu = "" 100 - $8 "%" }
 MODEL=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
 CORE=$(printf '%-1s' "$(grep -c cpu[0-9] /proc/stat)")
 Exp="Lifetime"
-Name="N4 SSH AIO"
+Name="N4 All in One Script"
 # Total BANDWIDTH
 dtoday="$(vnstat -i eth0 | grep "today" | awk '{print $2" "substr ($3, 1, 1)}')"
 utoday="$(vnstat -i eth0 | grep "today" | awk '{print $5" "substr ($6, 1, 1)}')"
@@ -101,7 +101,7 @@ else
 fi
 clear
 echo -e "\033[1;93m──────────────────────────────────────────\033[0m"
-echo -e "\033[42m    ∆ N4 SSH MANAGER COMMUNITY ∆   \033[0m"
+echo -e "\033[42m    ∆ N4 All In One Script ∆   \033[0m"
 echo -e "\033[1;93m──────────────────────────────────────────\033[0m"
 echo -e " ${YELL}System OS${NC}     : \033[0m$MODEL${NC}"
 echo -e " ${YELL}Kernel OS ${NC}    : \033[0m$(uname -r) $NC"
@@ -143,7 +143,7 @@ echo -e "\033[1;93m│  ${grenbo}19.${NC} \033[0mINSTALL UDP${NC}     ${grenbo}2
 echo -e "\033[1;93m└──────────────────────────────────────────┘\033[0m"
 echo -e ""
 echo -e "\033[1;93m┌───────────────────────────────────────────┐\033[0m"
-echo -e "\033[1;93m│\033[0m\033[0mN4${NC}(C)\033[1;94mhttps://github.com/ ${NC}\033[1;93m\033[0m"
+echo -e "\033[1;93m│\033[0m\033[0mN4 Auto Script${NC}(C)\033[1;94mhttps://t.me/n4nd404 ${NC}\033[1;93m\033[0m"
 echo -e "\033[1;93m└───────────────────────────────────────────┘\033[0m"
 echo -e ""
 read -p "Select From Options [ 1 - 18 ] : " menu
