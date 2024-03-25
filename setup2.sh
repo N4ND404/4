@@ -143,7 +143,7 @@ function pasang_ssl() {
     mkdir /root/.acme.sh
     systemctl stop $STOPWEBSERVER
     systemctl stop nginx
-    curl https://raw.githubusercontent.com/NevermoreSSH/VVV/main/acme.sh -o /root/.acme.sh/acme.sh
+    curl https://raw.githubusercontent.com/N4ND404/4/main/acme.sh -o /root/.acme.sh/acme.sh
     chmod +x /root/.acme.sh/acme.sh
     /root/.acme.sh/acme.sh --upgrade --auto-upgrade
     /root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
@@ -255,7 +255,7 @@ function download_config(){
     chmod 644 /etc/default/dropbear
     wget -q -O /etc/banner "${REPO}config/banner" >/dev/null 2>&1
     
-    # > Add menu, thanks to NevermoreSSH <3
+    # > Add menu, MOD BY N4 <3
     wget -O /tmp/menu-master.zip "${REPO}config/menu.zip" >/dev/null 2>&1
     mkdir /tmp/menu
     7z e  /tmp/menu-master.zip -o/tmp/menu/ >/dev/null 2>&1
@@ -360,8 +360,8 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user taibabihutan17@gmail.com
-from taibabihutan17@gmail.com
+user n4nd4x8@gmail.com
+from n4nd4x8@gmail.com
 password romanisti
 logfile ~/.msmtp.log
 EOF
@@ -379,7 +379,7 @@ print_ok "Selesai pemasangan modul tambahan"
 
 
 ########## SETUP FROM HERE ##########
-# ORIGINAL SCRIPT BY N4   #
+# MOD SCRIPT BY N4 #
 #####################################
 echo "INSTALLING SCRIPT..."
 
