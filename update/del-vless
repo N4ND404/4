@@ -1,10 +1,10 @@
 #!/bin/bash
 # //====================================================
 # //	System Request:Debian 9+/Ubuntu 18.04+/20+
-# //	Author:	elliez
+# //	Mod:	Mod By N4
 # //	Dscription: Xray Menu Management
-# //	email: elliez667@gmail.com
-# //  telegram: https://t.me/
+# //	email: n4nd4x8@gmail.com
+# //  telegram: https://t.me/n4nd404
 # //====================================================
 # // font color configuration | N4 AUTOSCRIPT
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }
