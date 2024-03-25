@@ -1,12 +1,12 @@
 #!/bin/bash
 # //====================================================
 # //	System Request:Debian 9+/Ubuntu 18.04+/20+
-# //	Author:	elliez
+# //	Mod:	Mod By N4
 # //	Dscription: Xray Menu Management
-# //	email: elliez667@gmail.com
-# //  telegram: https://t.me/
+# //	email: n4nd4x8@gmail.com
+# //  telegram: https://t.me/n4nd404
 # //====================================================
-# // font color configuration | n4 AUTOSCRIPT
+# // font color configuration | N4 AUTOSCRIPT
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 domain=$(cat /etc/xray/domain)
 PUB=$(cat /etc/slowdns/server.pub)
@@ -39,7 +39,7 @@ cipher="aes-128-gcm"
 uuid=$(cat /proc/sys/kernel/random/uuid)
 read -p "Expired (days): " masaaktif
 read -p "Limit User (GB): " Quota
-exp=$(date -d "$masaaktif days" +"%Y-%m-%d")
+exp=$(date -d "$masssactive days" +"%Y-%m-%d")
 sed -i '/#ssws$/a\#ss# '"$user $exp"'\
 },{"password": "'""$uuid""'","method": "'""$cipher""'","email": "'""$user""'"' /etc/xray/config.json
 sed -i '/#ssgrpc$/a\#ss# '"$user $exp"'\
@@ -54,14 +54,13 @@ systemctl restart xray
 rm -rf /tmp/log
 rm -rf /tmp/log1
 cat >/var/www/html/ss-$user.txt <<-END
-====================================================================
-             P R O J E C T  O F  N 4
-                       [Freedom Internet]
-====================================================================
-        https://github.com/
-====================================================================
+========================================================
+                   N4 AUTO SCRIPT
+========================================================
+               https://t.me/n4nd404
+========================================================
               Format Shadowsocks WS (CDN)
-====================================================================
+========================================================
 
 {
  "dns": {
@@ -169,10 +168,9 @@ cat >/var/www/html/ss-$user.txt <<-END
   "stats": {}
  }
 
-_______________________________________________________
-              Format Shadowsocks gRPC
-_______________________________________________________
-
+_____________________________________________
+           Format Shadowsocks gRPC
+_____________________________________________
 
 {
     "dns": {
@@ -279,13 +277,13 @@ _______________________________________________________
 }
 
 
-_______________________________________________________
-              Link Shadowsocks Account
-_______________________________________________________
+____________________________________________
+          Link Shadowsocks Account
+____________________________________________
 Link TLS : ${shadowsockslink}
-_______________________________________________________
+____________________________________________
 Link gRPC : ${shadowsockslink1}
-_______________________________________________________
+____________________________________________
 
 END
 
